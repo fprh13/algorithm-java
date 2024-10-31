@@ -1,10 +1,12 @@
 package private_algorithm.linear_data.structure.stack;
 
+import java.util.ArrayDeque;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>();
+//        Stack<Integer> stack = new Stack<>();
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
         // stack에 데이터를 푸시
         stack.push(1);
         System.out.println("stack에 1 push");
@@ -26,7 +28,5 @@ public class Main {
         System.out.println("now stack size is " + stack.size());
         System.out.println("pop :" + stack.pop());
         System.out.println("now stack size is " + stack.size());
-
-
     }
 }
